@@ -11,4 +11,5 @@
     <!--Adding colors-->
     <color name="header_start_color">#7B46FF</color>
     <color name="header_end_color">#ED5485</color>
+    <color name="button_adding_color">#C5ED54</color>
 </resources>

@@ -7,6 +7,15 @@
         <entry key="..\:/Users/progr/AndroidStudioProjects/MyCash/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/progr/AndroidStudioProjects/MyCash/app/src/main/res/layout/fragment_costs.xml" value="0.1" />
         <entry key="..\:/Users/progr/AndroidStudioProjects/MyCash/app/src/main/res/layout/fragment_incomes.xml" value="0.20742753623188406" />
+        <entry key="app/src/main/res/drawable/background_add_button.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/background_edit_text.xml" value="0.142" />
+        <entry key="app/src/main/res/drawable/background_header.xml" value="0.1435" />
+        <entry key="app/src/main/res/layout/activity_logic_acitivty.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.26015930175781254" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.2504528985507246" />
+        <entry key="app/src/main/res/layout/expenses_layout_item.xml" value="0.192481884057971" />
+        <entry key="app/src/main/res/layout/fragment_add_operation.xml" value="0.16759900079257245" />
+        <entry key="app/src/main/res/layout/fragment_costs.xml" value="0.16232147216796883" />
       </map>
     </option>
   </component>
