@@ -108,6 +108,7 @@ public class CostsFragment extends Fragment implements HistoryAdapterItemClickLi
 
         setListeners();
 
+        binding.chart.setNoDataText("У вас нет расходов за эту дату");
         return binding.getRoot();
     }
 
@@ -158,11 +159,15 @@ public class CostsFragment extends Fragment implements HistoryAdapterItemClickLi
         viewModel.getUsersOperation().observe(getActivity(), new Observer<List<OperationHistory>>() {
             @Override
             public void onChanged(List<OperationHistory> operationHistories) {
-                if(operationHistories.size() != 0)
+                if(operationHistories.size() != 0) {
                     setDataPieChart(operationHistories);
                     adapter.clearItems();
                     adapter.setItems(operationHistories);
                     binding.chart.invalidate();
+                } else {
+                    binding.chart.setData(null);
+                    binding.chart.invalidate();
+                }
             }
         });
     }

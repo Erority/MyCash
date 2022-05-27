@@ -104,6 +104,7 @@ public class IncomesFragment extends Fragment implements HistoryAdapterItemClick
             setUpPiechart();
 
             setListeners();
+            binding.chart.setNoDataText("У вас нет расходов за эту дату");
 
             return binding.getRoot();
         }
@@ -157,6 +158,9 @@ public class IncomesFragment extends Fragment implements HistoryAdapterItemClick
                         setDataPieChart(operationHistories);
                         adapter.clearItems();
                         adapter.setItems(operationHistories);
+                        binding.chart.invalidate();
+                    } else {
+                        binding.chart.setData(null);
                         binding.chart.invalidate();
                     }
                 }

@@ -11,6 +11,7 @@ import com.example.mycash.utils.RetrofitListener;
 import java.io.IOException;
 import java.security.cert.CertificateException;
 import java.util.List;
+import java.util.jar.JarEntry;
 
 import javax.net.ssl.HostnameVerifier;
 import javax.net.ssl.SSLContext;
@@ -56,14 +57,20 @@ public class UserService {
             public void onResponse(Call<List<User>> call, Response<List<User>> response) {
                 List<User> users = response.body();
                 try {
+                    User buffUser = new User();
+
+
                     for (User user : users) {
                         if (user.getUserLogin().equals(login) && user.getUserPassword().equals(password)) {
-                            retrofitListener.onSuccess();
-                            authUser.setValue(user);
+                            buffUser = user;
                             break;
                         }
                     }
-                    retrofitListener.onFailure();
+
+                    if(buffUser.getUserLogin() != null)
+                        authUser.setValue(buffUser);
+                    else retrofitListener.onFailure();
+
                 } catch (Exception e){
                     retrofitListener.onFailure();
                 }
