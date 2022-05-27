@@ -47,7 +47,8 @@
                 android:layout_height="wrap_content"/>
 
             <EditText
-                android:id="@+id/editTextTextPersonName"
+                android:padding="4dp"
+                android:id="@+id/editTextLogin"
                 android:background="@drawable/background_edit_text"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
@@ -67,16 +68,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
             <EditText
-                android:id="@+id/editTextTextPersonName2"
+                android:padding="4dp"
+                android:id="@+id/editTextPassword"
                 android:background="@drawable/background_edit_text"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
                 android:ems="10"
-                android:inputType="textPersonName"/>
+                android:inputType="textPassword"/>
         </LinearLayout>
     </LinearLayout>
 
     <Button
+        android:id="@+id/buttonEnter"
         android:backgroundTint="@null"
         android:background="@drawable/background_edit_text"
         android:text="Войти"
