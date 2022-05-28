@@ -75,7 +75,7 @@
 
             <EditText
                 android:id="@+id/editTextCost"
-                android:layout_width="40dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/purple_500"
                 android:hint="0"
