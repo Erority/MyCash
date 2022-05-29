@@ -161,7 +161,9 @@ public class IncomesFragment extends Fragment implements HistoryAdapterItemClick
                         binding.chart.invalidate();
                     } else {
                         binding.chart.setData(null);
-                        binding.chart.invalidate();
+                        binding.chart.invalidate();;
+
+                        adapter.clearItems();
                     }
                 }
             });

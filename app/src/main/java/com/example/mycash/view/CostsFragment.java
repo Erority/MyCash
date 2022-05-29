@@ -167,6 +167,8 @@ public class CostsFragment extends Fragment implements HistoryAdapterItemClickLi
                 } else {
                     binding.chart.setData(null);
                     binding.chart.invalidate();
+
+                    adapter.clearItems();
                 }
             }
         });
